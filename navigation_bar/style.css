@@ -1,0 +1,52 @@
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: whitesmoke;
+}
+
+nav {
+	display: flex;
+	background-color: white;
+	align-items: center;
+	border: solid 1px grey;
+	border-top-style: None;
+	border-right-style: None;
+	border-left-style: None;	
+}
+
+nav #left-section {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+nav #left-section * {
+	margin-left: 5%;
+	margin-left: 5%;	
+}
+
+nav #left-section p:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+nav #left-section img:hover {
+	cursor: pointer;
+}
+
+nav #mid-section {
+	display: flex;
+	align-items: center;
+	flex-grow: 2;
+	padding-left: 10%;
+}
+
+nav #mid-section * {
+	margin-left: 5px;
+	margin-right: 5px;	
+}
