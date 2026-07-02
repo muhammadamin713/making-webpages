@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <title>Render Video</title>
+	<script src="http://cdn.dashjs.org/latest/modern/umd/dash.all.min.js"></script>
+    <style>	  
+	  main {
+		  min-height: 100vh;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+	  }
+
+	  #videoPlayer {
+		  width: 300px;
+	  }
+
+	  @media (min-width: 992px) {
+		  #videoPlayer {
+			  width: 800px;
+		  }
+	  }
+    </style>
+  </head>
+  <body>
+    <main>
+      <video id="videoPlayer" controls></video>
+	</main>
+	<script>
+	  const url = "http://127.0.0.1:8000/storage/manifest.mpd";
+	  const player = dashjs.MediaPlayer().create();
+	  player.initialize(document.querySelector("#videoPlayer"), url, true);
+	</script>
+  </body>
+</html>
