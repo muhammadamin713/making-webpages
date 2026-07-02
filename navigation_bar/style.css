@@ -30,7 +30,15 @@ nav #left-section * {
 	margin-left: 5%;	
 }
 
-nav #left-section p:hover {
+nav #left-section a {
+	text-decoration: none;
+}
+
+nav #left-section a:visited {
+	color: inherit;
+}
+
+nav #left-section a:hover {
 	color: blue;
 	cursor: pointer;
 }
